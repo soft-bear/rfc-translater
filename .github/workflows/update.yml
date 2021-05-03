@@ -45,7 +45,7 @@ jobs:
 
       - name: Run main.py # 未翻訳ファイルの翻訳
         run: |
-          python main.py
+          python main.py --begin 9000
 
       #TODO アップデートしたファイル名を確認
       - name: Commit and Push # 翻訳結果をpush
