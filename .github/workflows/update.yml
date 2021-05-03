@@ -26,6 +26,7 @@ jobs:
           pip install tqdm
           pip install googletrans==4.0.0-rc1
           pip install selenium
+          pip install beautifulsoup4
     
       - name: Install geckodriver
         run: |
