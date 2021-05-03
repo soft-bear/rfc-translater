@@ -40,7 +40,7 @@ jobs:
           cd /usr/local/bin/
           chmod +x geckodriver
           export WEBDRIVER_EXE_PATH="/usr/local/bin/geckodriver"
-          echo WEBDRIVER_EXE_PATH
+          echo $WEBDRIVER_EXE_PATH
           
 
       - name: Run main.py # 未翻訳ファイルの翻訳
