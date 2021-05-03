@@ -181,6 +181,9 @@ def trans_rfc(number, mode):
     input_file = '%s/rfc%d.json' % (input_dir, number)
     output_file = '%s/rfc%d-trans.json' % (input_dir, number)
     midway_file = '%s/rfc%d-midway.json' % (input_dir, number)
+    
+    if os.path.isfile(output_file):
+        return False
 
     if os.path.isfile(midway_file):  # 途中まで翻訳済みのファイルがあれば復元する
         with open(midway_file, 'r', encoding="utf-8") as f:
