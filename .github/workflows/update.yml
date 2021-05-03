@@ -1,4 +1,6 @@
 # This is a basic workflow to help you get started with Actions
+# html/obsoletes.jsonの更新(contentsのtextにあったりなかったりするobsoletesをみつけてjsonを更新するスクリプト)
+# html/index.htmlの更新(<div id="RFCs" class="list-group list-group-flush">から上につっこむ)
 
 name: UPDATE
 
@@ -37,6 +39,7 @@ jobs:
           chmod +x geckodriver
           ls
           sudo mv geckodriver /usr/local/bin/
+          rm geckodriver.tar.gz
           cd /usr/local/bin/
           chmod +x geckodriver
           export WEBDRIVER_EXE_PATH="/usr/local/bin/geckodriver"
